@@ -108,6 +108,8 @@ async def ayuda(ctx):
                     value='La lista de todos los masters y sus partidas.', inline=False)
     embed.add_field(name='-!sinopsis',
                     value='La carpeta con las sinopsis de las partidas.', inline=False)
+    embed.add_field(name='-!duracion',
+                    value='La duración e inicio de las partidas.', inline=False)
 
     await ctx.send(embed=embed)
 
@@ -145,6 +147,15 @@ async def masters(ctx):
 async def sinopsis(ctx):
     response = f'{ctx.message.author.mention} En esta carpeta se encuentran todas las sinopsis:\n' \
                f'http://u.uma.es/Hv/'
+
+    await ctx.send(response)
+
+
+@bot.command(name='duracion')
+async def duracion(ctx):
+    response = f'{ctx.message.author.mention} Las partidas comienzan a las 16:30 y terminan a las 20:30, ' \
+               f'pero debido a que en esta jornada se realizan en el servidor, pueden llegar a extenderse más ' \
+               f'de la hora. Luego la duración es mínima de 4h.'
 
     await ctx.send(response)
 
