@@ -119,12 +119,12 @@ async def fecha(ctx):
     response = f'{ctx.message.author.mention} La VII Jornada de Rol Inf. Uma ' \
                f'se realizará el Jueves 5 y Viernes 6 de Noviembre. \n' \
                f'Las partidas son:\n' \
-               f'    - Jueves 5: Hijo Rata - NSD20\n' \
-               f'    - Jueves 5: Dead Girls Tell no Tales - FATE\n' \
-               f'    - Jueves 5: Una Cuestión de Honor - Shadowshot Narrativo\n' \
-               f'    - Viernes 6: Huellas Inmutables - Offworlders\n' \
-               f'    - Viernes 6: Un Sendero Blanco - 1800: El Ocaso de la Humanidad\n' \
-               f'    - Viernes 6: El Cumpleaños de la Emperatriz - Anima\n'
+               f'    - Jueves 19: Hijo Rata - NSD20\n' \
+               f'    - Jueves 19: Dead Girls Tell no Tales - FATE\n' \
+               f'    - Jueves 19: Una Cuestión de Honor - Shadowshot Narrativo\n' \
+               f'    - Viernes 20: Huellas Inmutables - Offworlders\n' \
+               f'    - Viernes 20: Un Sendero Blanco - 1800: El Ocaso de la Humanidad\n' \
+               f'    - Viernes 20: El Cumpleaños de la Emperatriz - Anima\n'
 
     await ctx.send(response)
 
