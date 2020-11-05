@@ -119,26 +119,31 @@ async def fecha(ctx):
     response = f'{ctx.message.author.mention} La VII Jornada de Rol Inf. Uma ' \
                f'se realizará el Jueves 5 y Viernes 6 de Noviembre. \n' \
                f'Las partidas son:\n' \
-               f'    - Jueves 5: Partida 1\n' \
-               f'    - Jueves 5: Partida 2\n' \
-               f'    - Jueves 5: Partida 3\n' \
-               f'    - Viernes 6: Partida 4\n' \
-               f'    - Viernes 6: Partida 5\n' \
-               f'    - Viernes 6: Partida 6\n'
+               f'    - Jueves 5: Hijo Rata - NSD20\n' \
+               f'    - Jueves 5: Dead Girls Tell no Tales - FATE\n' \
+               f'    - Jueves 5: Una Cuestión de Honor - Shadowshot Narrativo\n' \
+               f'    - Viernes 6: Huellas Inmutables - Offworlders\n' \
+               f'    - Viernes 6: Un Sendero Blanco - 1800: El Ocaso de la Humanidad\n' \
+               f'    - Viernes 6: El Cumpleaños de la Emperatriz - Anima\n'
 
     await ctx.send(response)
 
 
 @bot.command(name='masters')
 async def masters(ctx):
-    m1 = '<@256834615661166602>'
+    shafledome_id = '<@256834615661166602>'
+    mogu_id = '<@137194784040157184>'
+    elsyor_id = '<@478513560855773185>'
+    david_id = '<@209928730582188043>'
+    koboldID = '<@277469785418235906>'
+    bardolimo_id = '<@365901196122390529>'
     response = f'{ctx.message.author.mention} Los masters son los siguientes:\n' \
-               f'    {m1} - Partida 1\n' \
-               f'    {m1} - Partida 2\n' \
-               f'    {m1} - Partida 3\n' \
-               f'    {m1} - Partida 4\n' \
-               f'    {m1} - Partida 5\n' \
-               f'    {m1} - Partida 6\n'
+               f'    Hijo Rata - NSD20: {bardolimo_id}\n' \
+               f'    Dead Girls Tell no Tales - FATE: {koboldID}\n' \
+               f'    Una Cuestión de Honor - Shadowshot Narrativo: {mogu_id}\n' \
+               f'    Huellas Inmutables - Offworlders: {elsyor_id}\n' \
+               f'    Un Sendero Blanco - 1800: El Ocaso de la Narrativa: {shafledome_id}\n' \
+               f'    El Cumpleaños de la Emperatriz: Anima: {david_id}\n'
 
     await ctx.send(response)
 
@@ -146,8 +151,14 @@ async def masters(ctx):
 @bot.command(name='sinopsis')
 async def sinopsis(ctx):
     response = f'{ctx.message.author.mention} En esta carpeta se encuentran todas las sinopsis:\n' \
-               f'http://u.uma.es/Hv/'
-
+               f'http://u.uma.es/Hv/ \n' \
+               f'    Hijo Rata - NSD20 (terror): http://u.uma.es/J0/ \n' \
+               f'    Dead Girls Tell no Tales - Fate (misterio/investigación): http://u.uma.es/J1/ \n' \
+               f'    Una Cuestión de Honor - Shadowshot narrativo (japón feudal): http://u.uma.es/J2/ \n' \
+               f'    Huellas Inmutables - Offworlders (ciencia ficción/western): http://u.uma.es/J3/ \n' \
+               f'    Un Sendero Blanco - 1800: El Ocaso de la Humanidad (fantasía oscura/steampunk):' \
+               f' http://u.uma.es/J4/\n' \
+               f'    El Cumpleaños de la Emperatriz - Anima (fantasía): http://u.uma.es/J5/ \n'
     await ctx.send(response)
 
 
